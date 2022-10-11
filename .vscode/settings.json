@@ -1,6 +1,7 @@
 {
     "python.testing.pytestArgs": [
-        "Unit 4. Autotests"
+        "Unit 4. Autotests",
+        "Unit 5. CICD"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,

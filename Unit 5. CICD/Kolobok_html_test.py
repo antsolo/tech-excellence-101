@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import os
 import pytest
 
@@ -18,4 +16,4 @@ def html(change_test_dir):
 
 
 def test_has_header(html):
-    assert '<h1>Сказка про Kолобка</h1>' in html
+    assert '<h1>Сказка про Колобка</h1>' in html

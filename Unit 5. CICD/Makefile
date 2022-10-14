@@ -1,5 +1,5 @@
 setup:
-	pip3 install --upgrade pip 
+	python3 -m pip install --upgrade pip 
 	pip3 install markdown2 pytest flake8
 
 clear:

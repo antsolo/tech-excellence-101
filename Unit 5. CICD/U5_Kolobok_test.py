@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from curses import echo
 import os
 import pytest
-import re
 
 subheader_kolobok_faced_fox_name = '## 4. Финал. Встреча с Лисой'
 the_end_name = "Конец"
@@ -14,10 +12,13 @@ def change_test_dir(request):
     yield
     os.chdir(request.config.invocation_dir)
 
+
+
 @pytest.fixture()
 def text(change_test_dir):
     with open('./Kolobok.md', mode='r') as output_file:
         return output_file.read()
+
 
 def test_has_header(text):
     assert '# Сказка про Колобка' in text
